@@ -457,7 +457,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Don't just take our word for it - hear from our satisfied clients about their experience.
+              Don&apos;t just take our word for it - hear from our satisfied clients about their experience.
             </p>
           </div>
 
@@ -480,8 +480,8 @@ export default function Home() {
                       </div>
                     </div>
                     <blockquote className="text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                      "LALOS transformed our kitchen beyond our expectations. The attention to detail and craftsmanship is outstanding. 
-                      They delivered exactly what we envisioned and more. Highly recommend!"
+                      &ldquo;LALOS transformed our kitchen beyond our expectations. The attention to detail and craftsmanship is outstanding. 
+                      They delivered exactly what we envisioned and more. Highly recommend!&rdquo;
                     </blockquote>
                     <div className="flex items-center justify-center space-x-4">
                       <div className="w-16 h-16 bg-[#BFA575] rounded-full flex items-center justify-center text-white text-xl font-bold">
@@ -512,8 +512,8 @@ export default function Home() {
                       </div>
                     </div>
                     <blockquote className="text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                      "The custom furniture they created for our living room is absolutely beautiful. The quality and finish are exceptional. 
-                      LALOS truly understands how to bring vision to life."
+                      &ldquo;The custom furniture they created for our living room is absolutely beautiful. The quality and finish are exceptional. 
+                      LALOS truly understands how to bring vision to life.&rdquo;
                     </blockquote>
                     <div className="flex items-center justify-center space-x-4">
                       <div className="w-16 h-16 bg-[#BFA575] rounded-full flex items-center justify-center text-white text-xl font-bold">
@@ -544,8 +544,8 @@ export default function Home() {
                       </div>
                     </div>
                     <blockquote className="text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                      "Professional, reliable, and incredibly skilled. Our bathroom renovation was completed on time and exceeded our expectations. 
-                      The team at LALOS is simply the best in the business."
+                      &ldquo;Professional, reliable, and incredibly skilled. Our bathroom renovation was completed on time and exceeded our expectations. 
+                      The team at LALOS is simply the best in the business.&rdquo;
                     </blockquote>
                     <div className="flex items-center justify-center space-x-4">
                       <div className="w-16 h-16 bg-[#BFA575] rounded-full flex items-center justify-center text-white text-xl font-bold">
@@ -576,8 +576,8 @@ export default function Home() {
                       </div>
                     </div>
                     <blockquote className="text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                      "Working with LALOS on our commercial office project was a pleasure. They delivered high-quality furniture on schedule 
-                      and within budget. Their attention to detail is remarkable."
+                      &ldquo;Working with LALOS on our commercial office project was a pleasure. They delivered high-quality furniture on schedule 
+                      and within budget. Their attention to detail is remarkable.&rdquo;
                     </blockquote>
                     <div className="flex items-center justify-center space-x-4">
                       <div className="w-16 h-16 bg-[#BFA575] rounded-full flex items-center justify-center text-white text-xl font-bold">
@@ -800,7 +800,7 @@ export default function Home() {
                   <span className="w-2 h-2 bg-[#BFA575] rounded-full mr-2 animate-pulse"></span>
                   Contact Information
                 </div>
-                <h3 className="text-4xl font-bold text-gray-800 mb-4">Let's Start Your Project</h3>
+                <h3 className="text-4xl font-bold text-gray-800 mb-4">Let&apos;s Start Your Project</h3>
                 <p className="text-xl text-gray-600 leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>Ready to transform your space? Get in touch for a free consultation and personalized estimate.</p>
               </div>
               
