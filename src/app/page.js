@@ -189,87 +189,196 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-10">
             {/* Custom Furniture */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 hover:from-gray-100 hover:to-gray-50 transition-all duration-500 border border-gray-200 hover:border-[#BFA575] shadow-lg hover:shadow-xl">
-              <div className="flex items-start space-x-6">
-                <div className="bg-[#BFA575] w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">🪑</span>
+            <div className="group relative bg-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-700 border border-gray-100 hover:border-[#BFA575]/30 overflow-hidden backdrop-blur-sm">
+              {/* Animated Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#BFA575]/5 via-transparent to-[#A89065]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#BFA575]/10 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-1000"></div>
+              
+              {/* Icon Container */}
+              <div className="relative z-10 flex items-start space-x-6">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 ring-4 ring-[#BFA575]/10 group-hover:ring-[#BFA575]/20">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2" />
+                    </svg>
+                  </div>
+                  {/* Floating accent with pulse */}
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#BFA575] rounded-full opacity-20 group-hover:opacity-60 transition-all duration-500 animate-pulse"></div>
+                  <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-[#A89065] rounded-full opacity-10 group-hover:opacity-30 transition-all duration-500"></div>
                 </div>
+                
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Custom Furniture</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-[#BFA575]/10 text-[#BFA575] text-xs font-semibold rounded-full mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      CUSTOM MADE
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#BFA575] transition-colors duration-300">Custom Furniture</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-lg group-hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
                     Handcrafted pieces designed to your exact specifications. From dining tables to bedroom sets, 
                     each piece is crafted with premium materials and attention to detail.
                   </p>
-                  <ul className="text-gray-500 space-y-2">
-                    <li>• Bespoke design consultation</li>
-                    <li>• Premium wood selection</li>
-                    <li>• Lifetime craftsmanship guarantee</li>
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Bespoke design consultation</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Premium wood selection</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Lifetime craftsmanship guarantee</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Home Renovations */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 hover:from-gray-100 hover:to-gray-50 transition-all duration-500 border border-gray-200 hover:border-[#BFA575] shadow-lg hover:shadow-xl">
-              <div className="flex items-start space-x-6">
-                <div className="bg-[#BFA575] w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">🏠</span>
+            <div className="group relative bg-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-700 border border-gray-100 hover:border-[#BFA575]/30 overflow-hidden backdrop-blur-sm">
+              {/* Animated Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#BFA575]/5 via-transparent to-[#A89065]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#BFA575]/10 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-1000"></div>
+              
+              {/* Icon Container */}
+              <div className="relative z-10 flex items-start space-x-6">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 ring-4 ring-[#BFA575]/10 group-hover:ring-[#BFA575]/20">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  {/* Floating accent with pulse */}
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#BFA575] rounded-full opacity-20 group-hover:opacity-60 transition-all duration-500 animate-pulse"></div>
+                  <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-[#A89065] rounded-full opacity-10 group-hover:opacity-30 transition-all duration-500"></div>
                 </div>
+                
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Home Renovations</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-[#BFA575]/10 text-[#BFA575] text-xs font-semibold rounded-full mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      RESIDENTIAL
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#BFA575] transition-colors duration-300">Home Renovations</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-lg group-hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
                     Complete home transformations that breathe new life into your space. From kitchens to bathrooms, 
                     we handle every aspect of your renovation project.
                   </p>
-                  <ul className="text-gray-500 space-y-2">
-                    <li>• Full project management</li>
-                    <li>• Quality materials & finishes</li>
-                    <li>• On-time completion guarantee</li>
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Full project management</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Quality materials & finishes</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">On-time completion guarantee</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Kitchen & Bathroom */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 hover:from-gray-100 hover:to-gray-50 transition-all duration-500 border border-gray-200 hover:border-[#BFA575] shadow-lg hover:shadow-xl">
-              <div className="flex items-start space-x-6">
-                <div className="bg-[#BFA575] w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">🍳</span>
+            <div className="group relative bg-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-700 border border-gray-100 hover:border-[#BFA575]/30 overflow-hidden backdrop-blur-sm">
+              {/* Animated Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#BFA575]/5 via-transparent to-[#A89065]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#BFA575]/10 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-1000"></div>
+              
+              {/* Icon Container */}
+              <div className="relative z-10 flex items-start space-x-6">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 ring-4 ring-[#BFA575]/10 group-hover:ring-[#BFA575]/20">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12c0 2.21 3.582 4 8 4s8-1.79 8-4" />
+                    </svg>
+                  </div>
+                  {/* Floating accent with pulse */}
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#BFA575] rounded-full opacity-20 group-hover:opacity-60 transition-all duration-500 animate-pulse"></div>
+                  <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-[#A89065] rounded-full opacity-10 group-hover:opacity-30 transition-all duration-500"></div>
                 </div>
+                
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Kitchen & Bathroom</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-[#BFA575]/10 text-[#BFA575] text-xs font-semibold rounded-full mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      SPECIALTY
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#BFA575] transition-colors duration-300">Kitchen & Bathroom</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-lg group-hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
                     Specialized expertise in kitchen and bathroom design. We create functional, beautiful spaces 
                     that enhance your daily living experience.
                   </p>
-                  <ul className="text-gray-500 space-y-2">
-                    <li>• Custom cabinetry design</li>
-                    <li>• Premium hardware selection</li>
-                    <li>• Smart storage solutions</li>
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Custom cabinetry design</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Premium hardware selection</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Smart storage solutions</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Commercial Projects */}
-            <div className="group bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 hover:from-gray-100 hover:to-gray-50 transition-all duration-500 border border-gray-200 hover:border-[#BFA575] shadow-lg hover:shadow-xl">
-              <div className="flex items-start space-x-6">
-                <div className="bg-[#BFA575] w-16 h-16 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">🏢</span>
+            <div className="group relative bg-white rounded-3xl p-8 hover:shadow-2xl transition-all duration-700 border border-gray-100 hover:border-[#BFA575]/30 overflow-hidden backdrop-blur-sm">
+              {/* Animated Background Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#BFA575]/5 via-transparent to-[#A89065]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#BFA575]/10 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-1000"></div>
+              
+              {/* Icon Container */}
+              <div className="relative z-10 flex items-start space-x-6">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500 ring-4 ring-[#BFA575]/10 group-hover:ring-[#BFA575]/20">
+                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l7-3 7 3zM9 6h6M9 10h6" />
+                    </svg>
+                  </div>
+                  {/* Floating accent with pulse */}
+                  <div className="absolute -top-1 -right-1 w-6 h-6 bg-[#BFA575] rounded-full opacity-20 group-hover:opacity-60 transition-all duration-500 animate-pulse"></div>
+                  <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-[#A89065] rounded-full opacity-10 group-hover:opacity-30 transition-all duration-500"></div>
                 </div>
+                
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-3">Commercial Projects</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  <div className="mb-2">
+                    <span className="inline-block px-3 py-1 bg-[#BFA575]/10 text-[#BFA575] text-xs font-semibold rounded-full mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      COMMERCIAL
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-[#BFA575] transition-colors duration-300">Commercial Projects</h3>
+                  <p className="text-gray-600 leading-relaxed mb-6 text-lg group-hover:text-gray-700 transition-colors duration-300" style={{ fontFamily: 'Inter, sans-serif' }}>
                     Professional woodworking solutions for businesses. From retail displays to office furniture, 
                     we deliver commercial-grade quality on time and within budget.
                   </p>
-                  <ul className="text-gray-500 space-y-2">
-                    <li>• Commercial-grade materials</li>
-                    <li>• Project timeline management</li>
-                    <li>• Bulk production capabilities</li>
-                  </ul>
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Commercial-grade materials</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Project timeline management</span>
+                    </div>
+                    <div className="flex items-center space-x-3 group/item hover:translate-x-1 transition-transform duration-200">
+                      <div className="w-2 h-2 bg-gradient-to-r from-[#BFA575] to-[#A89065] rounded-full group-hover/item:scale-125 transition-transform duration-200"></div>
+                      <span className="text-gray-700 font-medium">Bulk production capabilities</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -850,7 +959,7 @@ export default function Home() {
                 
                 <div className="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#BFA575]/30">
                   <div className="flex items-center space-x-5">
-                    <div className="w-14 h-14 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-14 h-14 bg-gradient-to-br from-[#BFA575] to-[#A89065] rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
